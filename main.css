@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+#conteudo{
+    display: flex;
+    justify-content: center
+   }
+
+.title{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  
+  height: 90px;
+
+}
+
+section{
+
+    text-align: center;
+
+}
+
+.bloco_2{
+
+padding-top: 50px;
+padding-left: 100px;
+width: 500px;
+height: 700px;
+
+
+}
+
+body{
+ 
+  font-family:  "Quicksand", sans-serif;;
+  color: white;
+  background: linear-gradient(#232A38, #1C202B);
+  
+
+}
+
+.bloco_2 div{
+  display: flex;
+  
+}
+
+.bloco_2 .header_results{
+  padding-bottom: 10px;
+  border-radius: 40px;
+
+
+}
+.bloco_2 header{
+  font-size: 30px;
+  font-weight: 900;
+  padding-top: 10px;
+  padding-left: 20px;
+
+}
+
+.bloco_2 p{
+
+font-size: 25px;
+}
+
+.bloco_2 div{
+
+  padding-bottom: 20px;
+
+}
+
+.results_price{
+
+  padding-left: 80px;
+
+}
+
+.container_1{
+
+padding-top: 50px;
+width: 75%;
+background: linear-gradient(#394253, #181C27);
+border-radius: 50px;
+margin-left: 200px;
+padding-left: 70px;
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*
+body{
+
+  /  background: linear-gradient(#181C27, #17153A);
+    color: white;
+
+}
+
+*/

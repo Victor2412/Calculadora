@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <div class="container_1">
+
+
+
+        <h1 class="title">Descubra quanto você pode ganhar por mês aplicando nossa estrutura</h1>
+
+        <div id="conteudo">
+
+            <section>
+
+                <div class="ranger">
+
+                    <div class="sliderValue">
+
+                        <span id="range1">1000</span>
+
+                    </div>
+
+                    <div class="field">
+
+                        <div class="value left">1000</div>
+
+
+                        <input type="range" min="1000" max="100000" value="1000" steps="1" id="slider1">
+
+
+                        <div class="value right">100000</div>
+
+
+
+                    </div>
+
+                    <h3>Investimento por Mês (R$)</h3>
+
+                </div>
+
+                <br>
+
+                <div class="ranger">
+
+                    <div class="sliderValue">
+
+                        <span id="range2">1</span>
+
+                    </div>
+
+                    <div class="field">
+
+                        <div class="value left">1</div>
+
+
+                        <input type="range" min="1" max="200" value="1" steps="1" id="slider2">
+
+
+                        <div class="value right">200</div>
+
+
+
+                    </div>
+
+                    <h3>Preço por Lead (R$)</h3>
+
+                </div>
+
+                <br>
+
+                <div class="ranger">
+
+                    <div class="sliderValue">
+
+                        <span id="range3">1</span>
+
+                    </div>
+
+                    <div class="field">
+
+                        <div class="value left">1</div>
+
+
+                        <input type="range" min="1" max="100" value="1" steps="1" id="slider3">
+
+
+                        <div class="value right">100</div>
+
+
+
+                    </div>
+
+                    <h3>Taxa de agendamento (%) <br>
+                        <span style="font-size: 15px; font-weight: 200;"> 5% para ruins, 10% regulares, 15% para boas,
+                            20%
+                            excelentes</span>
+                    </h3>
+
+
+                </div>
+
+                <br>
+
+                <div class="ranger">
+
+                    <div class="sliderValue">
+
+                        <span id="range4">1</span>
+
+                    </div>
+
+                    <div class="field">
+
+                        <div class="value left">1</div>
+
+
+                        <input type="range" min="1" max="100" value="1" steps="1" id="slider4">
+
+
+                        <div class="value right">100</div>
+
+
+
+                    </div>
+
+                    <h3>Taxa de Comparecimento (%) <br>
+                        <span style="font-size: 15px; font-weight: 200;">
+                            Média 50% a 85%</span>
+                    </h3>
+
+
+                </div>
+
+                <br>
+
+                <div class="ranger">
+
+                    <div class="sliderValue">
+
+                        <span id="range5">1</span>
+
+                    </div>
+
+                    <div class="field">
+
+                        <div class="value left">1</div>
+
+
+                        <input type="range" min="1" max="10" value="1" steps="1" id="slider5">
+
+
+                        <div class="value right">10</div>
+
+
+
+                    </div>
+
+                    <h3>Taxa de Conversão (%) <br>
+                        <span style="font-size: 15px; font-weight: 200;">
+                            Média 10% a 30%</span>
+                    </h3>
+
+
+                </div>
+
+                <br>
+
+                <div class="ranger">
+
+                    <div class="sliderValue">
+
+                        <span id="range6">100</span>
+
+                    </div>
+
+                    <div class="field">
+
+                        <div class="value left">100</div>
+
+
+                        <input type="range" min="100" max="50000" value="100" steps="100" id="slider6">
+
+
+                        <div class="value right">50000</div>
+
+
+
+                    </div>
+
+                    <h3> Ticket Médio (R$) </h3>
+
+
+                </div>
+
+
+            </section>
+
+
+            <section class="bloco_2">
+
+                <div class="header_results">
+                    <header>RESULTADOS (MENSAL):</header>
+                </div>
+
+                <div class="results-faturamento">
+                    <p>Faturamento
+                    <p class="results_price"><sup>R$</sup> <span id="faturamentoRes">0.0.0</span></p>
+                    </p>
+
+                </div>
+
+
+                <div class="results-sales">
+                    <p>Número de Vendas</p>
+                    <p class="results_price">
+                        <span id="numeroVendasRes">0</span>
+                    </p>
+                </div>
+
+
+
+
+
+                <div class="results-cac">
+                    <p>CAC</p>
+                    <p class="results_price">
+                        <sup>R$</sup>
+                        <span id="cacRes">000,00</span>
+                    </p>
+                </div>
+
+
+                <div class="results-roas">
+
+                    <p>ROAS</p>
+                    <p class="results_price">
+                        <span id="roasRes">0</span>
+                    </p>
+
+
+                </div>
+
+
+                <div class="results-sdr">
+
+                    <p>Número de SDRsf</p>
+                    <!--  <p>750 leads/mês por SDR</p> -->
+                    <p class="results_price">
+                        <span id="sdrRes">0</span>
+                    </p>
+
+
+
+                </div>
+
+
+                <div class="results-closer">
+
+                    <p>Número de Closers</p>
+                    <!-- <p>90 atendimentos/mês por Closer</p> -->
+                    <p class="results_price">
+                        <span id="closerRes">0</span>
+                    </p>
+
+                </div>
+            </section>
+
+
+        </div>
+
+
+        <script>
+            window.onload = function () {
+
+                //Input --- 1
+
+                const slideValue1 = document.getElementById("range1");
+                const inputSlider1 = document.getElementById("slider1");
+
+                inputSlider1.oninput = () => {
+                    let value = inputSlider1.value;
+                    slideValue1.textContent = value;
+                    slideValue1.style.left = (value / 1000) + "%";
+                    slideValue1.classList.add("show");
+                };
+
+                inputSlider1.onblur = () => {
+                    slideValue1.classList.remove("show");
+                };
+
+
+                //Input --- 2
+
+                const slideValue2 = document.getElementById("range2");
+                const inputSlider2 = document.getElementById("slider2");
+
+                inputSlider2.oninput = () => {
+                    let value = inputSlider2.value;
+                    slideValue2.textContent = value;
+                    slideValue2.style.left = (value / 2) + "%";
+                    slideValue2.classList.add("show");
+                };
+
+                inputSlider2.onblur = () => {
+                    slideValue2.classList.remove("show");
+                };
+
+
+                //Input --- 3
+
+                const slideValue3 = document.getElementById("range3");
+                const inputSlider3 = document.getElementById("slider3");
+
+                inputSlider3.oninput = () => {
+                    let value = inputSlider3.value;
+                    slideValue3.textContent = value;
+                    slideValue3.style.left = (value / 1) + "%";
+                    slideValue3.classList.add("show");
+                };
+
+                inputSlider3.onblur = () => {
+                    slideValue3.classList.remove("show");
+                };
+
+
+                //Input --- 4
+
+                const slideValue4 = document.getElementById("range4");
+                const inputSlider4 = document.getElementById("slider4");
+
+                inputSlider4.oninput = () => {
+                    let value = inputSlider4.value;
+                    slideValue4.textContent = value;
+                    slideValue4.style.left = (value / 1) + "%";
+                    slideValue4.classList.add("show");
+                };
+
+                inputSlider4.onblur = () => {
+                    slideValue4.classList.remove("show");
+                };
+
+
+
+                //Input --- 5
+
+                const slideValue5 = document.getElementById("range5");
+                const inputSlider5 = document.getElementById("slider5");
+
+                inputSlider5.oninput = () => {
+                    let value = inputSlider5.value;
+                    slideValue5.textContent = value;
+                    slideValue5.style.left = (value * 7 - 8) + "%";
+                    slideValue5.classList.add("show");
+                };
+
+                inputSlider5.onblur = () => {
+                    slideValue5.classList.remove("show");
+                };
+
+
+
+
+                //Input --- 6
+
+                const slideValue6 = document.getElementById("range6");
+                const inputSlider6 = document.getElementById("slider6");
+
+                inputSlider6.oninput = () => {
+                    let value = inputSlider6.value;
+                    slideValue6.textContent = value;
+                    slideValue6.style.left = (value / 500) + "%";
+                    slideValue6.classList.add("show");
+                };
+
+                inputSlider6.onblur = () => {
+                    slideValue6.classList.remove("show");
+                };
+
+
+
+
+            };
+        </script>
+    </div>
+</body>
+
+</html>
